@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<body>
+		<title> Cookie Clicker! </title>
+		<h1> Cookie Clicker </h1>
+		<p> The Purpose Of This Website Is To Click a Cookie! </p>
+		<img src = "cookie.jpeg" id = "cookie" onclick = "increment()">
+		<p> Times Clicked: <span id = "counter">0</span> </p>
+		<button id = "reset" onclick = "reset()"> Reset </button>
+	</body>
+	<script>
+		var clicks = 0;
+		function increment(){
+			clicks = clicks + 1;
+			counter.innerHTML = clicks;
+		}
+		function reset(){
+			clicks = 0;
+			counter.innerHTML = clicks;
+		}
+	</script>
+	<style>
+		body{
+			font-family: Helvetica;
+			padding-left: 2px;
+		}
+	</style>
+</html>
